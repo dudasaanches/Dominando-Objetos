@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var Pessoa = {
+            nome: "Sanches",
+            idade: 16,
+            profissao: "Aluna",
+            endereco: {
+                rua: "Av. João Cernach",
+                cidade: "Birigui",
+                estado: "São Paulo"
+            },
+            apresentacao(){
+                console.log("Olá, meu nome é ", Pessoa.nome , ", eu tenho " , Pessoa.idade , " anos e sou um ", Pessoa.profissao)
+            },
+            informacao(){
+                console.log("Moro na rua" ,  this.endereco.rua , ", na cidade" , Pessoa.endereco.cidade , "-", Pessoa.endereco.estado)
+            }
+        }
+    </script> 
+</body>
+</html>
